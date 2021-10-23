@@ -46,7 +46,13 @@ public class Lab2P2_KarimGuifarro {
                                 admin(usuario, contraseña);
                                 w = 'g';
                             }
-                        } 
+                        }else if(o.getUsuario().equals(usuario) && o.getContra().equals(contraseña) && o.getTipo().equals("alumno")){
+                                    char w = 'c';
+                            while (w == 'c') {
+                                alumno(usuario, contraseña);
+                                w = 'g';
+                            }
+                                    } 
                     }
                 }
                 break;
